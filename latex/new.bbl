@@ -1,0 +1,346 @@
+\begin{thebibliography}{35}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Addison et~al.(2019)Addison, Teixeira, Grunau and
+  Bellmann}]{addison2019worker}
+\bibinfo{author}{Addison, J.T.}, \bibinfo{author}{Teixeira, P.},
+  \bibinfo{author}{Grunau, P.}, \bibinfo{author}{Bellmann, L.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Worker representation and temporary employment in
+  germany: The deployment and extent of fixed-term contracts and temporary
+  agency work}.
+\newblock \bibinfo{journal}{Journal of Participation and Employee Ownership}
+  \bibinfo{volume}{2}, \bibinfo{pages}{24--46}.
+%Type = Article
+\bibitem[{Albert et~al.(2005)Albert, Garc{\'i}a-Serrano and
+  Hernanz}]{Albert2005}
+\bibinfo{author}{Albert, C.}, \bibinfo{author}{Garc{\'i}a-Serrano, C.},
+  \bibinfo{author}{Hernanz, V.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Firm-provided training and temporary contracts}.
+\newblock \bibinfo{journal}{Spanish Economic Review} \bibinfo{volume}{7},
+  \bibinfo{pages}{67--88}.
+\newblock \URLprefix \url{https://doi.org/10.1007/s10108-004-0087-1},
+  \DOIprefix\doi{10.1007/s10108-004-0087-1}.
+%Type = Article
+\bibitem[{Andolfatto(1996)}]{andolfatto1996business}
+\bibinfo{author}{Andolfatto, D.}, \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Business cycles and labor-market search}.
+\newblock \bibinfo{journal}{The american economic review} ,
+  \bibinfo{pages}{112--132}.
+%Type = Article
+\bibitem[{Arulampalam and Booth(1998)}]{doi:10.1111/1467-8543.00106}
+\bibinfo{author}{Arulampalam, W.}, \bibinfo{author}{Booth, A.L.},
+  \bibinfo{year}{1998}.
+\newblock \bibinfo{title}{Training and labour market flexibility: Is there a
+  trade-off?}
+\newblock \bibinfo{journal}{British Journal of Industrial Relations}
+  \bibinfo{volume}{36}, \bibinfo{pages}{521--536}.
+\newblock \URLprefix
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8543.00106},
+  \DOIprefix\doi{10.1111/1467-8543.00106},
+  \href{http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1111/1467-8543.00106}{{\tt
+  arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1111/1467-8543.00106}}.
+%Type = Article
+\bibitem[{Arulampalam et~al.(2004)Arulampalam, Booth and
+  Bryan}]{10.1162/154247604323068041}
+\bibinfo{author}{Arulampalam, W.}, \bibinfo{author}{Booth, A.L.},
+  \bibinfo{author}{Bryan, M.L.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{{Training in Europe}}.
+\newblock \bibinfo{journal}{Journal of the European Economic Association}
+  \bibinfo{volume}{2}, \bibinfo{pages}{346--360}.
+\newblock \URLprefix \url{https://doi.org/10.1162/154247604323068041},
+  \DOIprefix\doi{10.1162/154247604323068041},
+  \href{http://arxiv.org/abs/http://oup.prod.sis.lan/jeea/article-pdf/2/2-3/346/10317643/jeea0346.pdf}{{\tt
+  arXiv:http://oup.prod.sis.lan/jeea/article-pdf/2/2-3/346/10317643/jeea0346.pdf}}.
+%Type = Article
+\bibitem[{Bentolila et~al.(2012)Bentolila, Dolado and
+  Jimeno}]{bentolila2012reforming}
+\bibinfo{author}{Bentolila, S.}, \bibinfo{author}{Dolado, J.J.},
+  \bibinfo{author}{Jimeno, J.F.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Reforming an insider-outsider labor market: the
+  spanish experience}.
+\newblock \bibinfo{journal}{IZA Journal of European Labor Studies}
+  \bibinfo{volume}{1}, \bibinfo{pages}{4}.
+%Type = Article
+\bibitem[{Burda and Wyplosz(1994)}]{burda1994gross}
+\bibinfo{author}{Burda, M.}, \bibinfo{author}{Wyplosz, C.},
+  \bibinfo{year}{1994}.
+\newblock \bibinfo{title}{Gross worker and job flows in europe}.
+\newblock \bibinfo{journal}{European economic review} \bibinfo{volume}{38},
+  \bibinfo{pages}{1287--1315}.
+%Type = Article
+\bibitem[{Cahuc et~al.(2016)Cahuc, Charlot and
+  Malherbet}]{doi:10.1111/iere.12167}
+\bibinfo{author}{Cahuc, P.}, \bibinfo{author}{Charlot, O.},
+  \bibinfo{author}{Malherbet, F.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Explaining the spread of temporary jobs and its
+  impact on labor turnover}.
+\newblock \bibinfo{journal}{International Economic Review}
+  \bibinfo{volume}{57}, \bibinfo{pages}{533--572}.
+\newblock \URLprefix
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/iere.12167},
+  \DOIprefix\doi{10.1111/iere.12167},
+  \href{http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1111/iere.12167}{{\tt
+  arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1111/iere.12167}}.
+%Type = Article
+\bibitem[{Calvo(1983)}]{calvo1983staggered}
+\bibinfo{author}{Calvo, G.A.}, \bibinfo{year}{1983}.
+\newblock \bibinfo{title}{Staggered prices in a utility-maximizing framework}.
+\newblock \bibinfo{journal}{Journal of monetary Economics}
+  \bibinfo{volume}{12}, \bibinfo{pages}{383--398}.
+%Type = Article
+\bibitem[{Canova(2014)}]{CANOVA20141}
+\bibinfo{author}{Canova, F.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Bridging dsge models and the raw data}.
+\newblock \bibinfo{journal}{Journal of Monetary Economics}
+  \bibinfo{volume}{67}, \bibinfo{pages}{1 -- 15}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S030439321400083X},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jmoneco.2014.06.003}.
+%Type = Article
+\bibitem[{Canova and Sala(2009)}]{CANOVA2009431}
+\bibinfo{author}{Canova, F.}, \bibinfo{author}{Sala, L.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Back to square one: Identification issues in dsge
+  models}.
+\newblock \bibinfo{journal}{Journal of Monetary Economics}
+  \bibinfo{volume}{56}, \bibinfo{pages}{431 -- 449}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0304393209000439},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jmoneco.2009.03.014}.
+%Type = Article
+\bibitem[{Cutuli and Guetto(2012)}]{10.1093/esr/jcs011}
+\bibinfo{author}{Cutuli, G.}, \bibinfo{author}{Guetto, R.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{{Fixed-Term Contracts, Economic Conjuncture, and
+  Training Opportunities: A Comparative Analysis Across European Labour
+  Markets}}.
+\newblock \bibinfo{journal}{European Sociological Review} \bibinfo{volume}{29},
+  \bibinfo{pages}{616--629}.
+\newblock \URLprefix \url{https://doi.org/10.1093/esr/jcs011},
+  \DOIprefix\doi{10.1093/esr/jcs011},
+  \href{http://arxiv.org/abs/http://oup.prod.sis.lan/esr/article-pdf/29/3/616/1270854/jcs011.pdf}{{\tt
+  arXiv:http://oup.prod.sis.lan/esr/article-pdf/29/3/616/1270854/jcs011.pdf}}.
+%Type = Article
+\bibitem[{Dares(2018)}]{dares062018}
+\bibinfo{author}{Dares}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Cdd, cdi : comment évoluent les embauches et les
+  ruptures depuis 25 ans ?}
+\newblock \bibinfo{journal}{Dares analyses} .
+%Type = Article
+\bibitem[{Druant et~al.(2012)Druant, Fabiani, Kezdi, Lamo, Martins and
+  Sabbatini}]{DRUANT2012772}
+\bibinfo{author}{Druant, M.}, \bibinfo{author}{Fabiani, S.},
+  \bibinfo{author}{Kezdi, G.}, \bibinfo{author}{Lamo, A.},
+  \bibinfo{author}{Martins, F.}, \bibinfo{author}{Sabbatini, R.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Firms' price and wage adjustment in europe: Survey
+  evidence on nominal stickiness}.
+\newblock \bibinfo{journal}{Labour Economics} \bibinfo{volume}{19},
+  \bibinfo{pages}{772 -- 782}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0927537112000267},
+  \DOIprefix\doi{https://doi.org/10.1016/j.labeco.2012.03.007}.
+  \bibinfo{note}{special Section on: Price, Wage and Employment Adjustments in
+  2007-2008 and Some Inferences for the Current European Crisis.}
+%Type = Article
+\bibitem[{Elsby et~al.(2015)Elsby, Hobijn and
+  {\c{S}}ahin}]{elsby2015importance}
+\bibinfo{author}{Elsby, M.W.}, \bibinfo{author}{Hobijn, B.},
+  \bibinfo{author}{{\c{S}}ahin, A.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{On the importance of the participation margin for
+  labor market fluctuations}.
+\newblock \bibinfo{journal}{Journal of Monetary Economics}
+  \bibinfo{volume}{72}, \bibinfo{pages}{64--82}.
+%Type = Techreport
+\bibitem[{Felgueroso et~al.(2017)Felgueroso, García-Pérez, Jansen and
+  Troncoso-Ponce}]{RePEc:fda:fdaeee:eee2017-25}
+\bibinfo{author}{Felgueroso, F.}, \bibinfo{author}{García-Pérez, J.I.},
+  \bibinfo{author}{Jansen, M.}, \bibinfo{author}{Troncoso-Ponce, D.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Recent trends in the use of temporary contracts in
+  Spain}}.
+\newblock \bibinfo{type}{Studies on the Spanish Economy}
+  \bibinfo{number}{eee2017-25}. FEDEA.
+\newblock \URLprefix
+  \url{https://ideas.repec.org/p/fda/fdaeee/eee2017-25.html}.
+%Type = Article
+\bibitem[{Filippo(2011)}]{RePEc:bpj:bejmac:v:11:y:2011:i:1:n:25}
+\bibinfo{author}{Filippo, F.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{{Trend Agnostic One-Step Estimation of DSGE Models}}.
+\newblock \bibinfo{journal}{The B.E. Journal of Macroeconomics}
+  \bibinfo{volume}{11}, \bibinfo{pages}{1--36}.
+\newblock \URLprefix
+  \url{https://ideas.repec.org/a/bpj/bejmac/v11y2011i1n25.html}.
+%Type = Book
+\bibitem[{Fontaine and Malherbet(2016)}]{fontaine2016cdd}
+\bibinfo{author}{Fontaine, F.}, \bibinfo{author}{Malherbet, F.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{CDD vs CDI: les effets d'un dualisme contractuel}.
+\newblock \bibinfo{publisher}{Presses de Sciences Po}.
+%Type = Article
+\bibitem[{Fontaine(2016)}]{fontaine2016french}
+\bibinfo{author}{Fontaine, I.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{French unemployment dynamics: a “three-state”
+  approach}.
+\newblock \bibinfo{journal}{Revue d'{\'e}conomie politique}
+  \bibinfo{volume}{126}, \bibinfo{pages}{835--869}.
+%Type = Article
+\bibitem[{Gertler et~al.(2008)Gertler, SALA and
+  TRIGARI}]{doi:10.1111/j.1538-4616.2008.00180.x}
+\bibinfo{author}{Gertler, M.}, \bibinfo{author}{SALA, L.},
+  \bibinfo{author}{TRIGARI, A.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{An estimated monetary dsge model with unemployment
+  and staggered nominal wage bargaining}.
+\newblock \bibinfo{journal}{Journal of Money, Credit and Banking}
+  \bibinfo{volume}{40}, \bibinfo{pages}{1713--1764}.
+\newblock \URLprefix
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4616.2008.00180.x},
+  \DOIprefix\doi{10.1111/j.1538-4616.2008.00180.x},
+  \href{http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1538-4616.2008.00180.x}{{\tt
+  arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1538-4616.2008.00180.x}}.
+%Type = Article
+\bibitem[{Hagedorn and Manovskii(2008)}]{10.1257/aer.98.4.1692}
+\bibinfo{author}{Hagedorn, M.}, \bibinfo{author}{Manovskii, I.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{The cyclical behavior of equilibrium unemployment and
+  vacancies revisited}.
+\newblock \bibinfo{journal}{American Economic Review} \bibinfo{volume}{98},
+  \bibinfo{pages}{1692--1706}.
+\newblock \URLprefix
+  \url{http://www.aeaweb.org/articles?id=10.1257/aer.98.4.1692},
+  \DOIprefix\doi{10.1257/aer.98.4.1692}.
+%Type = Article
+\bibitem[{Hagen(2002)}]{doi:10.1111/1467-9914.00212}
+\bibinfo{author}{Hagen, T.}, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Do temporary workers receive risk premiums? assessing
+  the wage effects of fixed–term contracts in west germany by a matching
+  estimator compared with parametric approaches}.
+\newblock \bibinfo{journal}{LABOUR} \bibinfo{volume}{16},
+  \bibinfo{pages}{667--705}.
+\newblock \URLprefix
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-9914.00212},
+  \DOIprefix\doi{10.1111/1467-9914.00212},
+  \href{http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1111/1467-9914.00212}{{\tt
+  arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1111/1467-9914.00212}}.
+%Type = Book
+\bibitem[{Herbst and Schorfheide(2016)}]{RePEc:pup:pbooks:10612}
+\bibinfo{author}{Herbst, E.}, \bibinfo{author}{Schorfheide, F.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Bayesian Estimation of DSGE Models}.
+\newblock \bibinfo{edition}{1} ed., \bibinfo{publisher}{Princeton University
+  Press}.
+\newblock \URLprefix \url{https://EconPapers.repec.org/RePEc:pup:pbooks:10612}.
+%Type = Article
+\bibitem[{Iskrev(2010)}]{ISKREV2010189}
+\bibinfo{author}{Iskrev, N.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Local identification in dsge models}.
+\newblock \bibinfo{journal}{Journal of Monetary Economics}
+  \bibinfo{volume}{57}, \bibinfo{pages}{189 -- 202}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0304393209001883},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jmoneco.2009.12.007}.
+%Type = Inproceedings
+\bibitem[{Iskrev et~al.(2010)}]{iskrev2010evaluating}
+\bibinfo{author}{Iskrev, N.}, et~al., \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Evaluating the strength of identification in dsge
+  models. an a priori approach}, in: \bibinfo{booktitle}{Society for Economic
+  Dynamics, 2010 Meeting Papers}.
+%Type = Article
+\bibitem[{Jolivet et~al.(2006)Jolivet, Postel-Vinay and
+  Robin}]{jolivet:hal-00279066}
+\bibinfo{author}{Jolivet, G.}, \bibinfo{author}{Postel-Vinay, F.},
+  \bibinfo{author}{Robin, J.M.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{{The empirical content of the job search model: Labor
+  mobility and wage distributions in Europe and the US}}.
+\newblock \bibinfo{journal}{{European Economic Review}} \bibinfo{volume}{50},
+  \bibinfo{pages}{877--907}.
+\newblock \URLprefix \url{https://hal.archives-ouvertes.fr/hal-00279066},
+  \DOIprefix\doi{10.1016/j.euroecorev.2006.02.005}.
+%Type = Article
+\bibitem[{Kramarz and Michaud(2010)}]{kramarz2010shape}
+\bibinfo{author}{Kramarz, F.}, \bibinfo{author}{Michaud, M.L.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{The shape of hiring and separation costs in france}.
+\newblock \bibinfo{journal}{Labour Economics} \bibinfo{volume}{17},
+  \bibinfo{pages}{27--37}.
+%Type = Article
+\bibitem[{Mertens et~al.(2007)Mertens, Gash and
+  McGinnity}]{doi:10.1111/j.1467-9914.2007.00396.x}
+\bibinfo{author}{Mertens, A.}, \bibinfo{author}{Gash, V.},
+  \bibinfo{author}{McGinnity, F.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{The cost of flexibility at the margin. comparing the
+  wage penalty for fixed-term contracts in germany and spain using quantile
+  regression}.
+\newblock \bibinfo{journal}{LABOUR} \bibinfo{volume}{21},
+  \bibinfo{pages}{637--666}.
+\newblock \URLprefix
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9914.2007.00396.x},
+  \DOIprefix\doi{10.1111/j.1467-9914.2007.00396.x},
+  \href{http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-9914.2007.00396.x}{{\tt
+  arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-9914.2007.00396.x}}.
+%Type = Article
+\bibitem[{Merz(1995)}]{merz1995search}
+\bibinfo{author}{Merz, M.}, \bibinfo{year}{1995}.
+\newblock \bibinfo{title}{Search in the labor market and the real business
+  cycle}.
+\newblock \bibinfo{journal}{Journal of monetary Economics}
+  \bibinfo{volume}{36}, \bibinfo{pages}{269--300}.
+%Type = Article
+\bibitem[{Pfeifer(2012)}]{Pfeifer2012}
+\bibinfo{author}{Pfeifer, C.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Fixed-term contracts and wages revisited using linked
+  employer-employee data}.
+\newblock \bibinfo{journal}{Journal for Labour Market Research}
+  \bibinfo{volume}{45}, \bibinfo{pages}{171--183}.
+\newblock \URLprefix \url{https://doi.org/10.1007/s12651-012-0107-9},
+  \DOIprefix\doi{10.1007/s12651-012-0107-9}.
+%Type = Article
+\bibitem[{Pfeifer(2014)}]{Pfeifer2014}
+\bibinfo{author}{Pfeifer, C.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{A note on dual internal labor markets and wages of
+  temporary workers: Evidence from linked-employer-employee data}.
+\newblock \bibinfo{journal}{Journal of Labor Research} \bibinfo{volume}{35},
+  \bibinfo{pages}{133--142}.
+\newblock \URLprefix \url{https://doi.org/10.1007/s12122-013-9173-1},
+  \DOIprefix\doi{10.1007/s12122-013-9173-1}.
+%Type = Unpublished
+\bibitem[{Rion(2019)}]{rion:halshs-02331887}
+\bibinfo{author}{Rion, N.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{{Waiting for the Prince Charming: Fixed-Term
+  Contracts as Stopgaps}}.
+\newblock \URLprefix \url{https://halshs.archives-ouvertes.fr/halshs-02331887}.
+  \bibinfo{note}{working paper or preprint}.
+%Type = Book
+\bibitem[{Saint-Paul(1996)}]{saint1996dual}
+\bibinfo{author}{Saint-Paul, G.}, \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Dual Labor Markets: A Macroeconomic Perspective}.
+\newblock \bibinfo{publisher}{MIT Press}.
+\newblock \URLprefix \url{https://books.google.fr/books?id=DVsTIar1iqwC}.
+%Type = Article
+\bibitem[{Thomas and Zanetti(2009)}]{thomas2009labor}
+\bibinfo{author}{Thomas, C.}, \bibinfo{author}{Zanetti, F.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Labor market reform and price stability: An
+  application to the euro area}.
+\newblock \bibinfo{journal}{Journal of Monetary Economics}
+  \bibinfo{volume}{56}, \bibinfo{pages}{885--899}.
+%Type = Article
+\bibitem[{Yun(1996)}]{yun1996nominal}
+\bibinfo{author}{Yun, T.}, \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Nominal price rigidity, money supply endogeneity, and
+  business cycles}.
+\newblock \bibinfo{journal}{Journal of monetary Economics}
+  \bibinfo{volume}{37}, \bibinfo{pages}{345--370}.
+
+\end{thebibliography}

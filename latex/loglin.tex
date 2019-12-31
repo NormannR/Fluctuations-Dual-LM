@@ -1,0 +1,48 @@
+%-----------------------------Base----------------------------%
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\usepackage{geometry}
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.5cm, % Inner margin
+	outer=2.5cm, % Outer margin
+	top=2.5cm, % Top margin
+	bottom=2.5cm, % Bottom margin
+	%showframe,% show how the type block is set on the page
+}
+\usepackage{booktabs}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[colorlinks=true,citecolor=blue]{hyperref}
+
+%-----------------------------MATH----------------------------%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\allowdisplaybreaks
+
+\begin{document}
+
+\begin{align*}
+    &\widehat{\pi_t} = \beta \mathbb{E}_t \widehat{\pi_{t+1}} + \frac{(1-\beta \psi) (1-\psi)}{\psi} \left( \widehat{\mu_t} + \widehat{\phi_t} \right)\\
+    &\widehat{c_t} = E_t \widehat{c_{t+1}} - \widehat{R_t} + E_t \widehat{\pi_{t+1}}\\
+    &\widehat{Y_t} = \frac{c}{Y} \widehat{c_t} + \frac{g}{Y} \widehat{g_t} + \frac{\gamma v}{Y} \widehat{v_t}\\
+    &\widehat{n_t^p} = \left( 1 - \xi^p \right) \widehat{n_{t-1}^p} - (1-s) z^p g\left(z^p\right) \widehat{z_t^p} + \frac{\left(1 - G\left( z^*\right)\right) q(\theta) v}{n^p} \left( \widehat{v_t} - \sigma \widehat{\theta_t} \right) - \frac{z^* g\left( z^* \right) q(\theta) v}{n^p} \widehat{z_t^*}\\
+    &\widehat{n_t^f} = \left( 1 - \xi^f \right) \widehat{n_{t-1}^f} + \frac{\left(G\left( z^*\right) - G\left( z^f\right)\right) q(\theta) v}{n^f} \left( \widehat{v_t} - \sigma \widehat{\theta_t} \right) + \frac{q(\theta) v}{n^f} \left( z^* g\left( z^* \right) \widehat{z_t^*} - z^f g\left( z^f \right) \widehat{z_t^f} \right)\\
+    &(1-\rho) z^* \widehat{z_t^*} = z^p \widehat{z_t^p} - \rho z^f \widehat{z_t^f}\\
+    &\rho \phi \left( z^f + \beta \left( 1 - \xi^f \right) \left( \mathbb{E}z - z^f \right) \rho_A \right) \widehat{A_t} + \rho \phi z^f \left( \widehat{\phi_t} + \widehat{z_t^f} \right) + \rho \beta \phi \left( 1 - \xi^f \right) \left( \mathbb{E}z - z^f \right)  \mathbb{E}_t \widehat{\phi_{t+1}}\\
+    &+ \left( b - \rho \phi z^f \right) \left( \widehat{c_t} - \mathbb{E}_t c_{t+1} \right) - \rho \phi \beta \left( 1 - \xi^f \right) z^f \mathbb{E}_t \widehat{z_{t+1}^f} - \beta \left( 1 - \xi^f \right) \frac{\eta \gamma \theta}{1-\eta} \mathbb{E}_t \widehat{\theta_{t+1}} = 0\\
+    &\phi \left( z^p + \left( 1-\beta (1-s)\rho_A \right) F + \beta (1-s) \rho_A \int_{z^p}^{+\infty} \left[ 1 - G(x) \right] dx \right) \widehat{A_t} + \phi z^p \widehat{z_t^p} + \phi \left( z^p + F \right) \widehat{\phi_t}\\
+    &+ \left( b - \phi  \left( z^p + F \right) \right) \left( \widehat{c_t} - \mathbb{E}_t c_{t+1} \right) + \beta (1-s) \phi \left( \int_{z^p}^{+\infty} \left[ 1 - G(x) \right] dx - F \right) \mathbb{E}_t \widehat{\phi_{t+1}}\\
+    &- \beta \left( 1 - \xi^p \right) \frac{\eta \gamma \theta}{1-\eta} \mathbb{E}_t \widehat{\theta_{t+1}} - \beta (1-s) \left( \left( 1 - G\left( z^p \right) \right) \phi - \frac{\eta \gamma \theta}{1-\eta} g \left( z^p \right) \right) z^p \mathbb{E}_t \widehat{z_{t+1}^p} = 0\\
+    &\frac{\gamma}{(1-\eta) \phi q(\theta)} \left( - \widehat{A_t} - \widehat{\phi_t} + \sigma \widehat{\theta_t} \right) + (1-\rho) \left( 1 - G\left( z^* \right) \right) z^* \widehat{z_t^*} + \rho \left( 1 - G\left( z^f \right) \right)  z^f \widehat{z_t^f} = 0\\
+    &\widehat{v_t} = \widehat{\theta_t} - \frac{\left(1 - \xi^p \right) \theta n^p}{v} \widehat{n_{t-1}^p} - \frac{\left( 1 - \xi^f \right) \theta n^f}{v} \widehat{n_{t-1}^f} + \frac{(1-s)\theta g\left( z^p \right) z^p n^p}{v} \widehat{z_t^p}\\
+    &\widehat{Y_t} = \widehat{A_t} + \frac{(1-s) \left( \int_{z^p}^{+\infty} zg(z) dz \right) n^p}{Y} \widehat{n_{t-1}^p} + \frac{\rho \left( 1 - \xi^f \right) \mathbb{E}_z n^f}{Y} \widehat{n_{t-1}^f} - \frac{(1-s) n^p \left( z^p \right)^2 g\left( z^p \right)}{Y} \widehat{z_t^p}\\
+    &- (1-\rho) \left( z^* \right)^2 g\left( z^* \right) \frac{v q(\theta)}{Y} \widehat{z_t^*}- \rho \left( z^f \right)^2 g\left( z^f \right) \frac{v q(\theta)}{Y}\widehat{z_t^f}\\
+    &+ \left( \int_{z^*}^{+\infty} zg(z) dz + \rho \int_{z^f}^{z^*} zg(z) dz \right) \frac{v q(\theta)}{Y} \left( \widehat{v_t} - \sigma \widehat{\theta_t} \right)\\
+    &\widehat{R_t} = \rho_R \widehat{R_{t-1}} + \left( 1 - \rho_R \right) \left[ \rho_{\pi} \mathbb{E}_t \widehat{\pi_{t+1}} + \rho_{y} \widehat{Y_t} \right] + \epsilon_t^m
+\end{align*}
+
+\end{document}

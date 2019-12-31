@@ -177,7 +177,7 @@ where $\mu_t = \epsilon_t /(\epsilon_t-1)$ is a mark-up shock such that $log\lef
 
 Intermediate good firms are in perfect competition, sell their output to retailers and use labor as input. They can employ one worker or maintain one vacancy. They face an idiosyncratic productivity shock $z_t$, an aggregate productivity shock $A_t$ and use open-end or fixed-term contracts to manage their workforce. $A_t$ follows the process $log\left(A_t\right) = (1-\rho_A) log\left(\overline{A}\right) + \rho_A log\left(A_{t-1}\right) + \epsilon_t^A$, with $\epsilon_t^A \overset{iid}{\sim} \mathcal{N} \left( 0, \sigma_A^2 \right)$.
 
-\paragraph{Open-ended contracts} A continuing open-ended contract delivers the wage $w_{t}^{p}$ and stipulates a firing tax $F_t = \phi_t A_t F$. On each period, an open-ended match may exogenously separate with probability $s$. In this case, the firing cost needs not to be paid. Otherwise, the firm chooses whether it keeps or lays off the worker regarding the idiosyncratic productivity of the match. An endogenous separation entails the payment of the firing cost. If I denote the firm's surplus with a continuing permanent match $J_t^p$ and the present discounted value of a vacancy $V_t$, I get the equation
+\paragraph{Open-ended contracts} A continuing open-ended contract delivers the wage $w_{t}^{p}$ and stipulates a firing tax $F_t = \phi_t A_t F$. On each period, an open-ended match may exogenously separate with probability $s$. In this case, the firing cost needs not to be paid. Otherwise, the firm chooses whether it keeps or lays off the worker regarding the idiosyncratic productivity of the match. An endogenous separation entails the payment of the firing cost. The firm's surplus with a continuing permanent match being increasing in $z_t$, I define the threshold $z_t^p$ below which paying the firing cost and dismissing the worker is preferrable. If I denote the firm's surplus with a continuing permanent match $J_t^p$ and the present discounted value of a vacancy $V_t$, I get the equation
 
 \begin{align*}
 J_t^p \left( z_{t} \right) = \phi_t A_t z_{t} - w_{t}^{p} \left( z_t \right) + \mathbb{E}_{t} \beta_{t,t+1} (1-s) \left\{ \int_{z_{t+1}^p}^{+\infty} J_{t+1}^{p} \left( z \right) dG(z) - G\left(z_{t+1}^p\right) F_{t+1} \right\}
@@ -189,6 +189,7 @@ where $z_t^p$ is the threshold for endogenous separations when it comes to the i
 \xi_t^p = s + (1-s) G\left( z_t^p \right) \label{def_xip}
 \end{equation}
 
+A worker under a continuing permanent contract earns the wage 
 In the case of a new match, the expression is the same but the wage is replaced with its entry-level counterpart. The negotiation of the permanent entry-level wage between firms and workers does not imply the payment of a firing cost in case of disagreement, which significantly weakens the threat point of the worker. After one period at the entry-level wage and apart from exogenous separations, the match is converted to a classic continuing permanent match if the idiosyncratic productivity is high enough. Otherwise, the match endogenously separates and the firm pays the firing cost.
 
 \begin{align*}
@@ -390,7 +391,7 @@ log\left( R_{t} / R \right) = \rho_R log\left( R_{t-1} / R\right) + \left( 1 - \
 
 where $y$ is the steady-state output and $\epsilon_t^m \overset{iid}{\sim} \mathcal{N} \left( 0, \sigma_m^2 \right)$.
 
-Fixed-term contracts are known to behave as buffers in front of workload fluctuations, as Saint-Paul (1996) \cite{saint1996dual} documented. Thus, the case of indeterminacy in the Taylor rule and the subsequent appearance of sunspot equilibria may prove interesting. For the sake of simplicity, though, I shall restrain the present analysis to the determinate case with $\rho_{\pi} > 1$ and $\rho_y > 0$ and leave indeterminacy and its consequences on dual labor markets for future research.
+Fixed-term contracts are known to behave as buffers in front of workload fluctuations, as \citet{saint1996dual} documented. Thus, the case of indeterminacy in the Taylor rule and the subsequent appearance of sunspot equilibria may prove interesting. For the sake of simplicity, though, I shall restrain the present analysis to the determinate case with $\rho_{\pi} > 1$ and $\rho_y > 0$ and leave indeterminacy and its consequences on dual labor markets for future research.
 
 \subsection{Market clearing conditions and the equilibrium}
 
@@ -403,7 +404,7 @@ n_t^p + n_t^f + u_t = 1
 The aggregate stock of job-seekers includes the formerly unemployed households and the new entrants in the unemployment pool from the current period.
 
 \begin{equation}
-e_t = u_{t-1} + \xi^f n_{t-1}^f + \xi_t^p n_{t-1}^p
+e_t = u_{t-1} + \delta n_{t-1}^f + \xi_t^p n_{t-1}^p
 \end{equation}
 
 The labor market tightness is the ratio between aggregate number of vacancies $v_t = \int_{0}^{1} v_{i,t} di$ and the number of job seekers.
