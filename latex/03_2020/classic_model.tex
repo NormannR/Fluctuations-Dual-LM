@@ -1,0 +1,90 @@
+\section{Classic Model}
+
+\label{classic_mod}
+
+\subsection{Equilibrium equations}
+
+\begin{align*}
+&u' \left( c_t \right) = \beta R_t \mathbb{E}_t \left[ \frac{P_t}{P_{t+1}} u' \left( c_{t+1} \right) \right]\\
+\begin{split}
+&A_t z_t^p \phi_t + F_t - \mathbb{E}_t \beta_{t,t+1} (1-s) F_{t+1} + \mathbb{E}_t  \beta_{t,t+1} (1-s) A_{t+1} \phi_{t+1} \int_{z_{t+1}^p}^{+\infty} \left( 1 -  G(z) \right) dG(z)\\
+&= b_t + \frac{\eta \gamma \theta_{t}}{1-\eta}
+\end{split}\\
+&z_t^c = z_t^p + \frac{F_t}{A_t \phi_t}\\
+&\frac{\gamma}{(1-\eta) A_t \phi_t q\left( \theta_t \right)} = \int_{z_t^c}^{+\infty} \left[ 1 - G(z) \right] dz\\
+&n_t^p = \left( 1 - \xi_t \right) n_{t-1}^p + \mu_t^p e_t\\
+&v_t = \theta_t \left( 1 - \left( 1-\xi_t \right) n_{t-1}^p \right)\\
+&Y_t = c_t + g_t + \gamma v_t\\
+&Y_t \Delta_t = A_t E_z \left[z \mid z \geq z_t^p \right] \left( 1 - \xi_t \right) n_{t-1}^p + \left( 1 - G\left( z_t^c \right)\right) q \left( \theta_t \right) v_t A_t E_z \left[z \mid z \geq z_t^c \right]\\
+&\mathbb{E}_{t} \sum_{T = t}^{+\infty} \beta_{t,T} \psi^{T-t} P_T^{\epsilon_T} Y_T \left( \frac{P_{i,t}^*}{P_T} - \mu_T \phi_T \right) = 0 \\
+&log\left( R_{t} / R \right) = \rho_R log\left( R_{t-1} / R\right) + \left( 1 - \rho_R \right) \left[ \rho_{\pi} \mathbb{E}_t log \left( \frac{P_{t+1}}{P_t} \right) + \rho_y log\left(\frac{y_t}{y}\right) \right] + \epsilon_t^m\\
+&log\left( A_{t} / A \right) = \rho^A log\left( A_{t-1} / A \right) + \epsilon_t^A\\
+&log\left( \mu_{t} / \mu \right) = \rho^\mu log\left( \mu_{t-1} / \mu \right) + \epsilon_t^\mu\\
+&log\left( g_{t} / g \right) = \rho^g log\left( g_{t-1} / g \right) + \epsilon_t^g\\
+\end{align*}
+
+\subsection{Log-linearization}
+
+\begin{align*}
+&\widehat{c_t} = \widehat{E_t c_{t+1}} - \left[-\frac{c u''}{u} \right]^{-1} \left( \widehat{R_t} - \widehat{E_t \pi_{t+1}}\right)\\
+\begin{split}
+&A \phi z^p \left( \widehat{A_t} + \widehat{z_t^p} + \widehat{\phi_t} \right) + \beta (1-s) \left( A \phi \int_{z^p}^{+\infty} \left( 1-G(z)\right) dz - F \right) \left( c_t - \mathbb{E}_t \widehat{c_{t+1}}\right)\\
+&+ \beta (1-s) A \phi \left( \int_{z^p}^{+\infty} \left( 1-G(z)\right) dz \left( \mathbb{E}_t \widehat{A_{t+1}} + \mathbb{E}_t \widehat{\phi_{t+1}} \right) - \left( 1-G\left( z^p \right) \right) z^p \mathbb{E}_t \widehat{z_{t+1}^p} \right)\\
+&+ F \widehat{F_t} - \beta (1-s) F \mathbb{E}_t \widehat{F_{t+1}} - b \widehat{b_t} - \frac{\eta \gamma \theta}{1-\eta} \widehat{\theta_{t}} = 0
+\end{split}\\
+&z^c \widehat{z_t^c} = z^p \widehat{z_t^p} + \frac{F}{A \phi} \left( \widehat{F_t} - \widehat{A_t} - \widehat{\phi_t} \right)\\
+&\frac{\gamma}{(1-\eta) \phi q(\theta)} \left( - \widehat{A_t} - \widehat{\phi_t} + \sigma \widehat{\theta_t} \right) + \left( 1 - G\left( z^c \right) \right) z^c \widehat{z_t^c} = 0\\
+&\widehat{n_t^p} = \left( 1 - \xi \right) \widehat{n_{t-1}^p} - (1-s) z^p g\left(z^p\right) \widehat{z_t^p} + \frac{\left(1 - G\left( z^c\right)\right) q(\theta) v}{n^p} \left( \widehat{v_t} - \sigma \widehat{\theta_t} \right) - \frac{z^c g\left( z^c \right) q(\theta) v}{n^p} \widehat{z_t^c}\\
+&\widehat{v_t} = \widehat{\theta_t} - \frac{\left(1 - \xi \right) \theta n^p}{v} \widehat{n_{t-1}^p} + \frac{(1-s)\theta g\left( z^p \right) z^p n^p}{v} \widehat{z_t^p}\\
+&\widehat{Y_t} = \frac{c}{Y} \widehat{c_t} + \frac{g}{Y} \widehat{g_t} + \frac{\gamma v}{Y} \widehat{v_t}\\
+\begin{split}
+&\widehat{Y_t} = \widehat{A_t} + \frac{(1-s) \left( \int_{z^p}^{+\infty} zg(z) dz \right) n^p}{Y} \widehat{n_{t-1}^p} - \frac{(1-s) n^p \left( z^p \right)^2 g\left( z^p \right)}{Y} \widehat{z_t^p}\\
+&- \left( z^c \right)^2 g\left( z^c \right) \frac{v q(\theta)}{Y} \widehat{z_t^c} + \left( \int_{z^c}^{+\infty} zg(z) dz \right) \frac{v q(\theta)}{Y} \left( \widehat{v_t} - \sigma \widehat{\theta_t} \right)
+\end{split}\\
+&\widehat{\pi_t} = \beta \mathbb{E}_t \widehat{\pi_{t+1}} + \frac{(1-\beta \psi) (1-\psi)}{\psi} \widehat{\phi_t}  + \epsilon_t^{\mu}\\
+&\widehat{R_t} = \rho_R \widehat{R_{t-1}} + \left( 1 - \rho_R \right) \left[ \rho_{\pi} \mathbb{E}_t \widehat{\pi_{t+1}} + \rho_{y} \widehat{Y_t} \right] + \epsilon_t^m\\
+&\widehat{A_t} = \rho_A \widehat{A_{t-1}} + \epsilon_t^A\\
+&\widehat{g_t} = \rho_g \widehat{g_{t-1}} + \epsilon_t^g
+\end{align*}
+
+\subsection{Estimation}
+
+\begin{table}[H]
+\begin{center}
+\caption{Prior and posterior distributions of structural parameters.}
+\begin{tabular}{cccccccc}
+\toprule
+Parameter & \multicolumn{3}{c}{Prior distribution} & \multicolumn{4}{c}{Posterior distribution} \\ \cmidrule{2-4} \cmidrule{5-8} & Distr. & Para (1) & Para(2) & Mean  & Std. Dev. & 5\%   & 95\% \\ \midrule
+$\rho_{A}$ & Uniform & 0.0 & 1.0 & 0.78 & 0.09 & 0.62 & 0.91 \\
+$\rho_\mu$ & Uniform & 0.0 & 1.0 & 0.1 & 0.11 & 0.01 & 0.35 \\
+$\rho_g$ & Uniform & 0.0 & 1.0 & 0.95 & 0.02 & 0.91 & 0.97 \\
+$\rho_R$ & Uniform & 0.0 & 1.0 & 0.68 & 0.08 & 0.53 & 0.8 \\
+$\rho_\pi$ & Normal & 1.5 & 0.75 & 2.52 & 0.57 & 1.3 & 3.13 \\
+$\rho_y$ & Normal & 0.12 & 0.15 & 0.12 & 0.06 & 0.03 & 0.24 \\
+$\psi$ & Beta & 0.7 & 0.05 & 0.8 & 0.04 & 0.73 & 0.85 \\
+$\sigma_A$ & IGamma & 0.5 & 4.0 & 0.31 & 0.03 & 0.26 & 0.37 \\
+$\sigma_\mu$ & IGamma & 0.5 & 4.0 & 0.27 & 0.04 & 0.2 & 0.33 \\
+$\sigma_g$ & IGamma & 0.5 & 4.0 & 7.14 & 2.36 & 3.12 & 9.64 \\
+$\sigma_m$ & IGamma & 0.5 & 4.0 & 0.1 & 0.03 & 0.07 & 0.15 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{estimates_classic}
+\begin{flushleft}
+\footnotesize{Para(1) and Para(2) correspond to mean and standard deviation of the prior distribution if the latter is Normal or Inverse Gamma. Para(1) and Para(2) correspond to lower and upper bound of the prior distribution when the latter is uniform}
+\end{flushleft}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption{Posterior Odds}
+    \begin{tabular}{ccc}
+    \toprule
+    Model & $log \left( p \left( Y_{1:T} \right) \right)$ & Std. Dev. \\
+    \midrule
+    Classic & -38.2 & 1.3 \\
+    Dual & -39.9 & 1.1 \\
+    \bottomrule
+    \end{tabular}%
+  \label{PostOdds}%
+\end{table}%

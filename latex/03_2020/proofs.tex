@@ -1,0 +1,46 @@
+\section{Proofs} \label{app:proofs}
+
+\paragraph{Proof Proposition \ref{prop:jc}}
+
+The behavior of the thresholds is characterized by the following proposition
+
+\begin{lemma}\label{lemma:thresholds}
+These assertions are equivalent
+\begin{enumerate}
+\item $z_t^* > z_t^f$
+\item $z_t^* > z_t^c$
+\item $z_t^c > z_t^f$
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+\begin{itemize}
+\item Assume that $z_t^*>z_t^f$. The definition of $z_t^*$\eqref{eq:zs} implies that $z_t^* = \left( 1 - \rho \right) z_t^* + \rho z_t^* = z_t^c + \rho \left( z_t^* - z_t^f\right)$. Since $z_t^* - z_t^f > 0$, the latter equality implies $z_t^* > z_t^c$.
+\item Assume that $z_t^*>z_t^c$. Again, jointly with algebraic manipulations, \eqref{eq:zs} implies that\\
+$\rho z_t^c = - \left( 1 - \rho \right) z_t^c + (1 - \rho) z_t^* + \rho z_t^f > - \left( 1 - \rho \right) z_t^c + (1 - \rho) z_t^c + \rho z_t^f > \rho z_t^f$, which entails that $z_t^c > z_t^f$.
+\item Assume that $z_t^c > z_t^f$. Algebraic manipulations and \eqref{eq:zs} imply that\\
+$\left(1-\rho\right) z_t^* = 1 \left( z_t^c - z_t^f \right) + \left( 1 - \rho \right) z_t^f > \left( 1 - \rho \right) z_t^f$, which implies $z_t^* > z_t^f$. \qedsymbol
+\end{itemize}
+\end{proof}
+
+Referring to the job creation condition \eqref{eq:jc},
+\begin{itemize}
+\item If open-ended workers are the only ones hired, then $max \left[ z^f, z^* \right] \leq z^f$, implying that $z^* \leq z^f$. Referring to Lemma \ref{lemma:thresholds}, the latter inequality entails $z^f \leq z^c$. As a result, $z^* \leq z^f \leq z^c$.
+
+\item If job creation is dual, then
+
+\begin{align*}
+\left\{
+\begin{array}{l}
+0 < \max \left[ z^f, z^* \right]\\
+z^f < z^*\\
+\end{array}
+\right.
+\end{align*}
+
+Using Lemma \ref{lemma:thresholds}, the latter system of inequalities boils down to $\max\left[ 0 , z^f \right] < z^*$.
+\end{itemize}
+
+For each case, the converse propositions are straightforward using \eqref{eq:jc}. \qedsymbol
+
+
+
