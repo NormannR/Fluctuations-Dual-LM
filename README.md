@@ -1,6 +1,6 @@
 # Fluctuations in a Dual Labor Market
 
-This repository contains the replication codes for my paper *Fluctuations in a Dual Labor Market*. They are written in Julia 1.4; `Manifest.toml` and `Project.toml` compound the necessary packages and dependencies. I amended a bit the `SymEngine.jl` package to include the Gauss error function; it is necessary to generate symbolic derivatives of the normal distributions c.d.f. The file pointer must be set to the root of the repository for the relative paths to work. 
+This repository contains the replication codes for my paper [*Fluctuations in a Dual Labor Market*](https://halshs.archives-ouvertes.fr/halshs-02570540). They are written in Julia 1.4; `Manifest.toml` and `Project.toml` compound the necessary packages and dependencies. I amended a bit the `SymEngine.jl` package to include the Gauss error function; it is necessary to generate symbolic derivatives of the normal distributions c.d.f. The file pointer must be set to the root of the repository for the relative paths to work. 
 
 Most functions are documented in the code itself. Here is the description of the main files
 
