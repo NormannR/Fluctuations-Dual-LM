@@ -9,7 +9,7 @@ using LaTeXStrings
 
 import QuantEcon.solve_discrete_lyapunov
 
-export LinMod, SymMod, init_EstLinMod, likelihood!, init_EstSMC, EstLinMod, EstSMC, solve!, state_space!, logprior
+export LinMod, SymMod, init_EstLinMod, likelihood!, init_EstSMC, EstLinMod, EstSMC, solve!, state_space!, logprior, kffast, ks!
 
 "A structure for linearized models."
 struct LinMod{T<: AbstractFloat}
@@ -215,7 +215,7 @@ function likelihood!(x, ϕ, M::EstLinMod)
 			flag = true
 			i = 1
 			while (i<T+1) & (flag)
-				shat,pshat,lht[i],_,go_on = kffast(M.Y[i,:], M.Z, shat, pshat, M.G, M.R)
+				shat,pshat,lht[i],_,flag = kffast(M.Y[i,:], M.Z, shat, pshat, M.G, M.R)
 				i += 1
 			end
 			if flag
@@ -253,8 +253,90 @@ function kffast(y,Z,s,P,T,R)
 		#log-Likelihood
 		lh = -.5*(y - fory)'*invforV*(y - fory) .- sum(log.(diag(C.L)))
 		return (ups, upP, lh[1], fory, true)
+
 	else
 		return (fors, forP, -Inf, fory, false)
+	end
+end
+
+"Computes the Kalman smoothed obervables, states and disturbances."
+ks!(SMC::EstSMC) = ks!(SMC.EstM, SMC.μ)
+
+"Computes the Kalman smoothed obervables, states and disturbances."
+function ks!(M::EstLinMod, x)
+    M.param .= x
+    outbound = (M.param .< M.bound[:,1]) .| (M.param .> M.bound[:,2])
+    if any(outbound)
+		flag = false
+    else
+		solve!(M)
+		state_space!(M)
+    	if !all(M.eu)
+			flag = false
+        else
+            # Initialize Kalman filter
+            T,n = size(M.Y)
+        	ss = size(M.G,1)
+            P0 = solve_discrete_lyapunov(M.G, M.R*M.R')
+			P = deepcopy(P0)
+        	s = zeros(ss,1)
+			flag = true
+			t = 1
+			invF_v = zeros(T,n)
+			Lt = Vector{typeof(M.G)}(undef, T)
+
+			while (t<T+1) & (flag)
+				invF_v[t,:], Lt[t], s, P, flag = kf_smooth(M.Y[t,:], M.Z, s, P, M.G, M.R)
+				t = t+1
+			end
+
+			η = zeros(T,n)
+			α = zeros(T+1,ss)
+			y = zeros(T,n)
+
+			if flag
+
+				r = zeros(T+1,ss)
+				for t = T:-1:1
+					r[t,:] .= M.Z'*invF_v[t,:] + Lt[t]*r[t+1,:]
+				end
+
+				α[1,:] = P0*r[1,:]
+
+				for t = 1:T
+					η[t,:] .= M.R'*r[t+1,:]
+					α[t+1,:] .= M.G*α[t,:] + M.R*η[t,:]
+					y[t,:] .= M.Z*α[t,:]
+				end
+
+			end
+
+			return (y, α, η)
+
+		end
+    end
+end
+
+"Carries out an update step of the Kalman filter and returns proper inputs for the Kalman smoother (Durbin Koopman p. 95)"
+function kf_smooth(y,Z,s,P,T,R)
+	#Updating
+	v = y-Z*s
+	F = Z*P*Z'
+	C = cholesky(Hermitian(F); check = false)
+	if issuccess(C)
+		z = C.L\v
+		invF_v = C.U\z
+		up_s = s + P*Z'*invF_v
+		sqrtinvF = inv(C.L)
+		invF = sqrtinvF'*sqrtinvF
+		Lt = T' - Z'*invF*Z*P'*T'
+		up_P = P - P*Z'*invF*Z*P
+		#Forecasting
+		for_s = T*up_s
+		for_P = T*up_P*T' + R*R'
+		return (invF_v, Lt, for_s, for_P, true)
+	else
+		return (s, T , s, P, false)
 	end
 end
 

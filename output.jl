@@ -287,3 +287,16 @@ cov_sim_q0 = deepcopy(cov_sim_q)
 JLD2.@load "output/cov_cor_rhoF.jld2" std_sim_mean std_sim_q cor_sim_mean cor_sim_q cov_sim_mean cov_sim_q
 # %%
 table_lm_moments_comp(std_obs, cor_obs, std_sim_mean0, cor_sim_mean0, std_sim_mean, cor_sim_mean, lm_latex)
+# %%
+# Plots the counterfactual historic series of observables with each shock hitting separately
+JLD2.@load "output/dual.jld2" SMC_dual
+# %%
+var_names = ["Y", "\\pi", "R", "n"]
+shock_names = ["A", "\\mu", "g", "m"]
+# %%
+mat_graphe = counterfactual(SMC_dual, var_names, shock_names)
+# %%
+n = size(var_names,1)
+plot(mat_graphe..., layout=(n,n))
+plot!(size=(1680,1050))
+savefig("./figures/counterfactuals.pdf")

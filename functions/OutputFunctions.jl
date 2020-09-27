@@ -601,3 +601,43 @@ function plot_cor(cor_obs, cor_sim_mean, cor_sim_q, lm_names)
     end
     return mat_graphe
 end
+
+"Plots the counterfactuals of observables"
+function counterfactual(SMC::EstSMC, var_names, shock_names)
+
+	M = SMC.EstM
+
+	y, α, η = ks!(SMC)
+	T,n = size(y)
+	y_dec = deepcopy(y)
+	α_dec = deepcopy(α)
+	η_dec = zeros(T,n)
+
+	mat_graphe = []
+
+	for s=1:n
+		fill!(η_dec, 0.)
+		η_dec[:,s] .= η[:,s]
+		for t=1:T
+			α_dec[t+1,:] .= M.G*α_dec[t,:] + M.R*η_dec[t,:]
+			y_dec[t,:] .= M.Z*α_dec[t,:]
+		end
+
+		for v=1:n
+			p = plot(y_dec[:,v] ,label = "", color="black", linewidth = 2, linestyle = :solid)
+			plot!(y[:,v], label = "", color="black", linewidth = 2, linestyle = :dash)
+			xgrid!(:off)
+			ygrid!(:off)
+			if s == n
+				xlabel!(string("\$", var_names[v], "\$"))
+			end
+			if v == 1
+				ylabel!(string("\$", shock_names[s], "\$"))
+			end
+			append!(mat_graphe,[p])
+		end
+	end
+
+	return mat_graphe
+
+end
